@@ -1,6 +1,12 @@
 #include <stdio.h>
 
-/*puts function prints only string */
+/**
+ * main entry point
+ *
+ * progthat print using puts function
+ *
+ * Return: Always 0 (success)
+ */
 
 int main(void)
 {	
