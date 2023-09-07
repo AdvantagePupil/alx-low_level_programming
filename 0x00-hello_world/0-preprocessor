@@ -1,7 +1,2 @@
 #!/bin/bash
-
-input_file="$CFILE"
-
-output_file="c"
-
-gcc -E $input_file -o $output_file
+input_file="$CFILE" | output_file="c" | gcc -E $input_file -o $output_file
