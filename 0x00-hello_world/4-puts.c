@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*puts function prints only string*/
+/*puts function prints only string */
 
 int main(void)
 {	
