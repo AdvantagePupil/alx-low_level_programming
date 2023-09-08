@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * description: a c program that prints the alphabet in lower case except q and e
+ * description: a c program that prints the alphabet lowercase except q and e
  *
  * Return: always 0 (success)
  */
@@ -12,9 +12,12 @@ int main(void)
 {
 	char ch;
 
-	for (ch = 'a' ; (ch != 'q' && ch != 'e') ; ch++)
+	for (ch = 'a' ; ch <= 'z' ; ch++)
 	{
+		if (ch != 'q' && ch != 'e')
+		{
 		putchar(ch);
+		}
 	}
 
 	putchar('\n');
