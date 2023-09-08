@@ -16,22 +16,19 @@ int main(void)
 
 	m = i + 1;
 
-	for (i ; i <= '9' ; i++)
+	for (int i = '0' ; i <= '9' ; i++)
 	{
-		for (m ; m <= '9' ; m++)
+		for (int m = i + 1 ; m <= '9' ; m++)
 		{
-			if (i != m)
+		putchar(i);
+
+		putchar(m);
+
+			if (i != '8' && m != '9')
 			{
-			putchar(i);
+			putchar(',');
 
-			putchar(m);
-
-				if (i != '8' && m != '9')
-				{
-				putchar(',');
-
-				putchar(' ');
-				}
+			putchar(' ');
 			}
 		}
 	}
