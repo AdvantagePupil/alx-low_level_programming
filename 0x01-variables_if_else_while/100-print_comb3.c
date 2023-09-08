@@ -10,15 +10,15 @@
 
 int main(void)
 {
-	int i = 0;
+	int i = '0';
 
 	int m;
 
 	m = i + 1;
 
-	for (int i = '0' ; i <= '9' ; i++)
+	for (i = '0' ; i <= '9' ; i++)
 	{
-		for (int m = i + 1 ; m <= '9' ; m++)
+		for (m = i + 1 ; m <= '9' ; m++)
 		{
 		putchar(i);
 
