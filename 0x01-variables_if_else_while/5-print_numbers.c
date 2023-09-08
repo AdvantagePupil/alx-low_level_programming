@@ -18,7 +18,7 @@ int main(void)
 	{
 		printf("%d", a);
 
-		a = a++;
+		a=a++;
 	}
 
 	printf("\n");
