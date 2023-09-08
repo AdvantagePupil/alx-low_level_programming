@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * description: a c program that prints all possible different combinations of two digits
+ * description: prints all possible different combinations of two digits
  *
  * Return: always 0 (success)
  */
@@ -18,13 +18,16 @@ int main(void)
 	{
 		for (m = '0' ; m <= '9' ; m++)
 		{
-		putchar(i);
+			if (i != m)
+			{
+			putchar(i);
 
-		putchar(m);
+			putchar(m);
 
-		putchar(',');
+			putchar(',');
 
-		putchar(' ');
+			putchar(' ');
+			}
 		}
 	}
 
