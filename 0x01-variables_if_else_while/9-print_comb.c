@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * description: a c program that prints all possible combinations of single-digit numbers
+ * description: prints possible combinations of single-dig numbers
  *
  * Return: always 0 (success)
  */
@@ -15,10 +15,13 @@ int main(void)
 	for (ch = '0' ; ch <= '9' ; ch++)
 	{
 		putchar(ch);
-
+		
+		for (ch = '0' ; ch <= '8' ; ch++)
+		{
 		putchar(',');
 
 		putchar(' ');
+		}
 	}
 
 	putchar('\n');
