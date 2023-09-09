@@ -5,7 +5,7 @@
  *
  * description: a program that prints all possible three digits combinations
  *
- * return: always 0 (success)
+ * Return: always 0 (success)
  */
 
 int main(void)
