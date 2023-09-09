@@ -24,12 +24,10 @@ int main(void)
 
 		putchar(m);
 
-			if (i != '8' && m != '9')
-			{
-			putchar(',');
 
-			putchar(' ');
-			}
+		putchar(',');
+
+		putchar(' ');
 		}
 	}
 
