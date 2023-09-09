@@ -1,46 +1,49 @@
 #include <stdio.h>
 
 /**
- * main - entry point
  *
- * description: prints all possible different combinations of three digits
+ * main -entry point
  *
- * Return: always 0 (success)
+ * description: a program that prints all possible three digits combinations
+ *
+ * return: always 0 (success)
  */
 
-int main(void)
+int main (void)
 {
-        int i = '0';
+	int i = '0';
 
-        int m;
+	int m;
 
 	int n;
 
-        m = i + 1;
+	m = i + 1;
 
-	n= m + 1;
+	n = m + 1;
 
-        for (i = '0' ; i <= '9' ; i++)
-        {
-                for (m = i + 1 ; m <= '9' ; m++)
-                {
+	for (i = '0' ; i <= '9' ; i++)
+	{
+		for (m = i + 1 ; m <= '9' ; m++)
+		{
 			for (n = m + 1 ; n <= '9' ; n++)
 			{
-                	putchar(i);
+			putchar(i);
 
-                	putchar(m);
-			
-                        	if (i != '7' || m != '8' || n != '9')
-                        	{
-                        	putchar(',');
+			putchar(m);
 
-                        	putchar(' ');
-                        	}
+			putchar(n);
+
+				if (i != '7' || m != '8' || n != '9')
+				{
+					putchar(',');
+
+					putchar(' ');
+
+				}
 			}
-                }
-        }
-
-        putchar('\n');
+		}
+	}
+	putchar('\n');
 
 	return (0);
 }
