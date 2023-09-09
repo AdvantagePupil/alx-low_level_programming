@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  * main -entry point
  *
  * description: a program that prints all possible three digits combinations
@@ -9,7 +8,7 @@
  * return: always 0 (success)
  */
 
-int main (void)
+int main(void)
 {
 	int i = '0';
 
