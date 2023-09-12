@@ -5,6 +5,8 @@
  *
  * _isalpha description: a function that checks for alphabetic character
  *
+ * @c: the ch is in ASCII code
+ *
  * Return: 1 if the cha is alphabet and 0 if else
  */
 
