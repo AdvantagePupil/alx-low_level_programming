@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *  _islower.c : a function print 1 if the charachter is lowercase else prints 0
+ *  _islower.c - Entry Point
  *
  *  Description:  a function that checks for lowercase character
  *and prints 1 if they are.if else prints 0.
