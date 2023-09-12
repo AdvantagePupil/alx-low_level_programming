@@ -3,7 +3,7 @@
 /**
  *  _islower.c - Entry Point
  *
- *  description: prints 1 if the charachter is lowercase and 0 if else
+ *  _islower.c description: prints 1 if the charachter is lowercase and 0 if else
  *
  *  @c: the char is in ASCII code
  *
