@@ -3,7 +3,9 @@
 /**
  *  _islower : print 1 if the charachter is lowercase else print 0
  *
- *  Description:  a function that checks for lowercase character.
+ *  Description:  a function that checks for lowercase character and prints 1 if they are.
+ *
+ *  c: the char is in ASCII code
  *
  *  Return: 1 if lower case and 0 if else
  */
