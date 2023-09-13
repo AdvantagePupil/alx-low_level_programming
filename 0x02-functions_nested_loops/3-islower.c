@@ -3,7 +3,7 @@
 /**
  *  _islower.c - Entry Point
  *
- *  _islower.c Description: a function that checks for lowercase character.
+ *  Description: a function that checks for lowercase character.
  *
  *  @c: the char is in ASCII code
  *
