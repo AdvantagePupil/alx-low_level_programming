@@ -1,8 +1,6 @@
 #include "main.h"
 
 /**
- *  _islower.c - Entry Point
- *
  *  _islower.c - a function that checks for lowercase character.
  *
  *  @c: the char is in ASCII code
