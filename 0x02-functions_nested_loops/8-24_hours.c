@@ -3,7 +3,7 @@
 /**
  * jack_bauer - Entry point
  *
- * jack_bauer description: a function that prints every minute of the day of Jack Bauer
+ * jack_bauer description: a function that prints every minute of Jack Bauer
  *
  * Return:
  */
@@ -27,10 +27,10 @@ void jack_bauer(void)
 	_putchar(58);
 	_putchar(c + '0');
 	_putchar(d + '0');
+	_putchar('\n');
 	}
 	}
 	}
 	}
 	}
-	
 }
