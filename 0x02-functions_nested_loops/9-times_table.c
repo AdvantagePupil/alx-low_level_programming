@@ -3,7 +3,7 @@
 /**
  * times_table - Entry point
  *
- * times_table description: a function that prints the 9 times table, starting with 0.
+ * times_table description: a function that prints the 9 times table.
  *
  * Return:
  */
@@ -24,7 +24,7 @@ void times_table(void)
 	_putchar(44);
 	_putchar(32);
 	_putchar(e + '0');
-	_putchar(d = '0');
+	_putchar(d + '0');
 	}
 	else
 	{
