@@ -4,7 +4,7 @@
 /**
  * print_to_98 - Entry point
  *
- * print_to_98 description: a function that prints all natural numbers from n to 98
+ * print_to_98 description: a function that prints all numbers from n to 98
  *
  * @n: the input number is integer
  *
@@ -25,7 +25,7 @@ void print_to_98(int n)
 	}
 	else
 	{
-	printf("%d ", n);
+	printf("%d, ", n);
 	}
 	}
 	}
@@ -41,7 +41,7 @@ void print_to_98(int n)
 	}
 	else
 	{
-	printf("%d ", n);
+	printf("%d, ", n);
 	}
 	}
 	}
