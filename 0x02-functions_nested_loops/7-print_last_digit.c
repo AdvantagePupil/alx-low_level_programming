@@ -5,6 +5,8 @@
  *
  * print_last_digit description: a function that prints the last digit
  *
+ * @i: is the number we input it's an integer
+ *
  * Return: calue of the last digit
  */
 
