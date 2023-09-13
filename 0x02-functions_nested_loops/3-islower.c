@@ -5,6 +5,8 @@
  *
  * _islower description: a function that checks for lowercase character.
  *
+ * @c: it's a char in ASCII code
+ *
  * Return: 1 if lower case and 0 if else
  */
 
