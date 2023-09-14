@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * more_numbers - Entry point
- *
- * more_numbers Description: prints the numbers from 0 to 14 10 times
- * 
- * Return: always 0 (success)
- */
+* more_numbers - Entry point
+*
+* more_numbers Description: prints the numbers from 0 to 14 10 times
+*
+* Return: always 0 (success)
+*/
 
 void more_numbers(void)
 {
