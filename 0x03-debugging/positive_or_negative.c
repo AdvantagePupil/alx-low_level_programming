@@ -3,7 +3,7 @@
 /**
 * main - Entry point
 *
-* positive_or_negative.c description: to check if a number is pos or neg
+* positive_or_negative.c Description: to check if a number is pos or neg
 *
 * @i: is a number (integer)
 *
