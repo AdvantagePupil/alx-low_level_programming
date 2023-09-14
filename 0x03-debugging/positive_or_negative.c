@@ -3,7 +3,9 @@
 /**
 * main - Entry point
 *
-* 0 : is the number to be checked
+* positive_or_negative.c description: to check if a number is pos or neg
+*
+* @i: is a number (integer)
 *
 * Return: always 0 (success)
 */
@@ -22,5 +24,5 @@ void positive_or_negative(int i)
 	{
 	printf("%d is %s\n", i, "zero");
 	}
-	return;
+	return (0);
 }
