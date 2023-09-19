@@ -20,7 +20,7 @@ void puts_half(char *str)
 		full_string++;
 	}
 	half_string = full_string / 2;
-	if (half_string % 1 == 0)
+	if (half_string % 2 == 1)
 	{
 		half_string++;
 	}
