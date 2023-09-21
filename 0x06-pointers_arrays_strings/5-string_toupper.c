@@ -5,7 +5,7 @@
  *
  * description: a function that changes all lowecase to uppercase
  *
- * @*: pointer
+ * @chr: pointer
  *
  * Return: the characters in uppercase
  */
