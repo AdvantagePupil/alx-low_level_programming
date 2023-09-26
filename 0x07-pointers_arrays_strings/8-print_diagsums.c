@@ -15,11 +15,11 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i;
+	int i = 0;
 
-	int j;
+	int j = 0;
 
-	int n;
+	int n = 0;
 
 	for (i = 0; i < size; i++)
 	{
