@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int _strspn - Entry point
+ * _strspn - Entry point
  *
  * description: a function that gets the length of a prefix substring.
  *
