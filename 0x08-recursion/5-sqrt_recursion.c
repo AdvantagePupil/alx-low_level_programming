@@ -21,10 +21,6 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * _sqrt_recursion - Entry point
- *
- * description: a function that returns the natural square root of a number.
- *
  * square - Entry point
  *
  * @n: int
