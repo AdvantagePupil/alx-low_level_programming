@@ -7,6 +7,8 @@
  *
  * @n: int
  *
+ * @j: int
+ *
  * Return: 1 if int or 0 if not
  */
 int check_prime(int n, int j);
