@@ -30,15 +30,15 @@ char *_strdup(char *str)
 	}
 	for (n = 0; str[n] != '\0'; n++)
 	{
-		j++;
+		;
 	}
 	if (i == NULL)
 	{
 		return (NULL);
 	}
-	for (n = 0; str[n] != '\0'; n++)
+	for (j = 0; j < n; j++)
 	{
-		i[n] = str[n];
+		i[j] = str[j];
 	}
 	return (i);
 
