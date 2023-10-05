@@ -13,9 +13,9 @@
 int _strlen(char *s)
 {
 	int size = 0;
-	
+
 	for (size = 0; s[size] != '\0'; size++)
-		;
+	;
 	return (size);
 }
 
@@ -41,11 +41,11 @@ char *str_concat(char *s1, char *s2)
 
 	char *j;
 
-	if (s1 ==NULL)
+	if (s1 == NULL)
 	{
 		s1 = "\0";
 	}
-	if (s1 ==NULL)
+	if (s2 == NULL)
 	{
 		s2 = "\0";
 	}
