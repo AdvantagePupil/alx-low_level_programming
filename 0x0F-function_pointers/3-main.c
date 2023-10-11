@@ -11,7 +11,7 @@
  *
  * @argv: vector
  *
- * @Return: always 0 (success)
+ * Return: always 0 (success)
  */
 
 int main(int argc, char *argv[])
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	
+
 	if ((*op == '/' && n2 == 0) || (*op == '%' && n2 == 0))
 	{
 		printf("Error\n");
