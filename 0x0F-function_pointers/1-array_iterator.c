@@ -3,7 +3,7 @@
 /**
  * array_iterator - Entry point
  *
- * description: executes a function given as a parameter on each element of an array
+ * description: executes a function as a parameter on each element of an array
  *
  * @array: array
  *
