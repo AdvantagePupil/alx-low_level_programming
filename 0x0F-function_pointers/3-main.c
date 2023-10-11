@@ -16,7 +16,7 @@
 
 int main(int argc, char *argv[])
 {
-	int (*op_func)(int,int), n1, n2;
+	int (*op_func)(int, int), n1, n2;
 
 	if (argc != 4)
 	{
