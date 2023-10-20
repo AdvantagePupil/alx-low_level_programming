@@ -16,9 +16,9 @@ size_t print_list(const list_t *h)
 
 	const list_t *current = h;
 
-	for (; current != NULL; current = current->next)
+	while (h != NULL)
 	{
-		if (current->str == NULL)
+		if (h->str == NULL)
 		{
 			printf("[%d] %s\n", 0, "(nil)");
 		}
@@ -26,6 +26,7 @@ size_t print_list(const list_t *h)
 		{
 			printf("[%d] %s\n", current->len, current->str);
 		}
+		h = h->next;
 
 		node++;
 	}
