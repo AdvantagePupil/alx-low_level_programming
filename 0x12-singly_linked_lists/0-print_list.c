@@ -26,7 +26,6 @@ size_t print_list(const list_t *h)
 		{
 			printf("[%d] %s\n", current->len, current->str);
 		}
-
 		node++;
 	}
 	return (node);
