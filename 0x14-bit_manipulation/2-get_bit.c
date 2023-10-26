@@ -25,6 +25,6 @@ int get_bit(unsigned long int n, unsigned int index)
 	if (i == j)
 	{
 		return (1);
-	}     
-       return (0);
+	}
+	return (0);
 }
