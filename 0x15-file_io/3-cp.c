@@ -1,55 +1,84 @@
 #include "main.h"
 
 /**
+ * error_file - Entry point
+ *
+ * description: handle errors that might occur during file operations.
+ * 
+ * @file_from: file_from.
+ * 
+ * @file_to: file_to.
+ * 
+ * @argv: arguments vector.
+ * 
+ * Return: no return.
+ */
+
+void error_file(int file_from, int file_to, char *argv[])
+{
+	if (file_from == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
+	if (file_to == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		exit(99);
+	}
+}
+
+/**
  * main - Entry point
  *
- * description: program that copies the content of a file to another file
+ * descrption:  a program that copies the content of a file to another file.
  *
- * @argc: num
+ * @argc: number of arguments.
  *
- * @argv: string
+ * @argv: arguments vector.
  *
- * Return: the file witht the copied content
+ * Return: Always 0 (success)
  */
 
 int main(int argc, char *argv[])
 {
-	FILE *file_from, *file_to;
-
-	int i;
+	int file_from, file_to, error_close;
+	ssize_t n, i;
+	char buff[1024];
 
 	if (argc != 3)
 	{
-		fprintf(stderr, "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
 		exit(97);
 	}
 
-	file_from = fopen(argv[1], "r");
+	file_from = open(argv[1], O_RDONLY);
+	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
+	error_file(file_from, file_to, argv);
 
-	if (file_from == NULL)
+	i = 1024;
+	while (i == 1024)
 	{
-		fprintf(stderr, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
+		i = read(file_from, buff, 1024);
+		if (i == -1)
+			error_file(-1, 0, argv);
+		n = write(file_to, buff, n);
+		if (n == -1)
+			error_file(0, -1, argv);
 	}
 
-	file_to = fopen(argv[2], "w");
-
-	if (file_to == NULL)
+	error_close = close(file_from);
+	if (error_close == -1)
 	{
-		fprintf(stderr, "Error: Can't write to %s\n", argv[2]);
-		fclose(file_from);
-		exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
+		exit(100);
 	}
 
-	i = fgetc(file_from);
-	while (i != EOF)
+	error_close = close(file_to);
+	if (error_close == -1)
 	{
-		fputc(i, file_to);
-		i = fgetc(file_from);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
+		exit(100);
 	}
-
-	fclose(file_from);
-	fclose(file_to);
-
 	return (0);
 }
