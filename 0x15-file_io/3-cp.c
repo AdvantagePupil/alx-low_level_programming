@@ -4,13 +4,13 @@
  * error_file - Entry point
  *
  * description: handle errors that might occur during file operations.
- * 
+ *
  * @file_from: file_from.
- * 
+ *
  * @file_to: file_to.
- * 
+ *
  * @argv: arguments vector.
- * 
+ *
  * Return: no return.
  */
 
