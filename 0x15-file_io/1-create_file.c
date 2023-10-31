@@ -14,30 +14,33 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	FILE *file;
+	int i;
+	int j;
+	int n;
 
 	if (!filename)
 	{
 		return (0);
 	}
 
-	file = fopen(filename, "w");
+	if (text_content != NULL)
+	{
+		for (n = 0; text_content[n];)
+		{
+			n++;
+		}
+	}
 
-	if (file == NULL)
+	i = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+
+	j = write(i, text_content, n);
+	
+	if (i == -1 || j == -1)
 	{
 		return (-1);
 	}
-	if (!text_content)
-	{
-		text_content = "";
-	}
-	if (fputs(text_content, file) == EOF)
-	{
-		fclose(file);
-		return (-1);
-	}
 
-	fclose(file);
+	close(i);
 	return (1);
 
 }
