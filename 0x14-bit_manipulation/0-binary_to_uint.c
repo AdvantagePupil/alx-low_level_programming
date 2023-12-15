@@ -3,7 +3,7 @@
 /**
  * binary_to_uint - Entry point
  *
- * description: Write a function that converts a binary number to an unsigned int
+ * description: a function that converts a binary number to an unsigned int
  *
  * @b: const char
  *
