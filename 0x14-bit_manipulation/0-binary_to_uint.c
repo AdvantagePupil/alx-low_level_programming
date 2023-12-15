@@ -3,11 +3,11 @@
 /**
  * binary_to_uint - Entry point
  *
- * description: a function that converts a binary number to an unsigned int
+ * description: function that converts a binary number to an unsigned int
  *
- * @b: const char
+ * @b :const char
  *
- * Retrun: unsigned int
+ * Return: unsigned int
  */
 
 unsigned int binary_to_uint(const char *b)
