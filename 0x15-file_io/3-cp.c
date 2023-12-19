@@ -2,7 +2,7 @@
 
 /**
  * creates_buffer - Entry point
- * 
+ *
  * descriptuon: allocates 1024 bytes for a buffer.
  *
  * @file: file.
@@ -18,7 +18,7 @@ char *creates_buffer(char *file)
 
 	if (buffer == NULL)
 	{
-		dprintf(STDERR_FILENO,"Error: Can't write to %s\n", file);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
 		exit(99);
 	}
 
@@ -57,12 +57,10 @@ void close_file(int x)
  *
  * Return: 0 on success
  */
+
 int main(int argc, char *argv[])
 {
-	int from;
-	int to;
-	int i;
-	int j;
+	int from, to, i, j;
 	char *buffer;
 
 	if (argc != 3)
@@ -72,17 +70,14 @@ int main(int argc, char *argv[])
 	}
 
 	buffer = creates_buffer(argv[2]);
-
 	from = open(argv[1], O_RDONLY);
-
 	i = read(from, buffer, 1024);
-
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
 		if (from == -1 || i == -1)
 		{
-			dprintf(STDERR_FILENO,"Error: Can't read from file %s\n", argv[1]);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			free(buffer);
 			exit(98);
 		}
@@ -90,23 +85,18 @@ int main(int argc, char *argv[])
 		j = write(to, buffer, i);
 		if (to == -1 || j == -1)
 		{
-			dprintf(STDERR_FILENO,"Error: Can't write to %s\n", argv[2]);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			free(buffer);
 			exit(99);
 		}
 
 		i = read(from, buffer, 1024);
 		to = open(argv[2], O_WRONLY | O_APPEND);
-
-	} 
-	while (i > 0);
+	} while (i > 0);
 
 	free(buffer);
-
 	close_file(from);
-
 	close_file(to);
 
 	return (0);
 }
-
