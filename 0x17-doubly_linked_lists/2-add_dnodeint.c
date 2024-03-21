@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - Entry point 
+ * add_dnodeint - Entry point
  *
  *description:  adds a new node at the beginning
  *
