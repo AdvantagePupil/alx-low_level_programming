@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * sum_dlistint - Entry point 
+ * sum_dlistint - Entry point
  *
  * description: returns the sum of all the data
  *
